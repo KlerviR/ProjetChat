@@ -13,7 +13,7 @@ export class MessageComponent {
     constructor(private service: MessageService, private momentService: MomentService) {
     }
 
-    public listeMessageParDate() { //-----------A supprimer
+    public listeMessageParDate() {
       return this.service.findAllFromDate("14022018105420");
     }
 }

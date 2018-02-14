@@ -13,4 +13,8 @@ export class MessageParSalonComponent {
 
     constructor(private route: ActivatedRoute, private service: MessageService ) {
     }
+
+    public listeMessageParDate() { //-----------A supprimer
+      return this.service.findAllFromDate("14022018105420");
+    }
 }
