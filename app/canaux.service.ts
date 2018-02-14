@@ -23,4 +23,8 @@ export class CanauxService {
 		}
 	}
 	
+	public findById(id: string) {
+	
+	}
+	
 }

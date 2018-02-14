@@ -19,7 +19,6 @@ export class AuthComponent {
 	public valider() {
 		this.service.findByUsername(this.utilisateur.username);
 		this.router.navigate(['/canal']);
-//		this.utilisateur = new Utilisateur();
 	}
 	
 }

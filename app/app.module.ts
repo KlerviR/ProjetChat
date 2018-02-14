@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CanauxComponent } from './canaux.component';
+import { CanalDetailComponent } from './canal-detail.component';
 import { MessageComponent } from './message.component';
 import { AuthComponent } from './auth.component';
 
@@ -14,12 +15,10 @@ import { MessageService } from './message.service';
 import { CanauxService } from './canaux.service';
 import { AuthService } from './auth.service';
 import { MomentService } from './moment.service';
-import { MessageParSalonComponent } from './message-par-salon.component';
 
 
 const routes: Routes = [
 	{ path: 'messages', component: MessageComponent },
-	{ path: 'salon/:id/messages', component: MessageParSalonComponent },
 	{ path: 'canal', component: CanauxComponent },
 	{ path: 'auth', component: AuthComponent }
 ]
@@ -43,9 +42,9 @@ const routes: Routes = [
     declarations: [
         AppComponent,
 		CanauxComponent,
+		CanalDetailComponent,
 		MessageComponent,
-		AuthComponent,
-		MessageParSalonComponent
+		AuthComponent
     ],
 
     bootstrap: [ AppComponent ]
