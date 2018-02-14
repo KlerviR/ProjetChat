@@ -16,7 +16,8 @@ export class AuthComponent {
 	
 	public valider() {
 		this.service.findByUsername(this.utilisateur.username);
-		this.utilisateur = new Utilisateur();
+		
+		this.utilisateur = new Utilisateur();	
 	}
 	
 }
