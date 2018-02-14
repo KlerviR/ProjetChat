@@ -4,8 +4,6 @@ import { Http } from '@angular/http';
 import { AppConfigService } from './app-config.service';
 import { Canal } from './canal';
 
-import 'rxjs/add/operator/toPromise';
-import 'rxjs/add/operator/map';
 
 
 @Injectable()

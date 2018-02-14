@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { CanauxService } from './canaux.service';
+
 
 @Component({
     selector: 'eshop-app',
@@ -8,6 +10,6 @@ import { Component } from '@angular/core';
 
 export class CanauxComponent { 
 
-	
+	constructor(private service: CanauxService) {}
 
 }

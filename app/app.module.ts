@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CanauxComponent } from './canaux.component';
@@ -18,8 +20,10 @@ const routes: Routes = [
 
 @NgModule({
     imports: [
-        BrowserModule,
-        RouterModule.forRoot(routes),
+		BrowserModule,
+		RouterModule.forRoot(routes),
+		HttpModule,
+		FormsModule
     ],
 
     providers: [
