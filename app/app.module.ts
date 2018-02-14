@@ -8,10 +8,12 @@ import { MessageComponent } from './message.component';
 
 import { AppConfigService } from './app-config.service';
 import { MessageService } from './message.service';
+import { CanauxService } from './canaux.service';
 
 
 const routes: Routes = [
-  { path: 'messages', component: MessageComponent }
+	{ path: 'messages', component: MessageComponent },
+	{ path: 'canal', component: CanauxComponent }
 ]
 
 @NgModule({
@@ -22,13 +24,14 @@ const routes: Routes = [
 
     providers: [
         AppConfigService,
-        MessageService
+        MessageService,
+		CanauxService
     ],
 
     declarations: [
         AppComponent,
 		CanauxComponent,
-    MessageComponent
+		MessageComponent
     ],
 
     bootstrap: [ AppComponent ]

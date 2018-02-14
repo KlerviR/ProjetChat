@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
     selector: 'eshop-app',
     templateUrl: 'app/canaux.component.html'
 })
-export class CanauxComponent { }
+
+export class CanauxComponent { 
+
+	
+
+}
