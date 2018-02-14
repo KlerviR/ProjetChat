@@ -4,7 +4,8 @@ import { AppConfigService } from './app-config.service'
 
 @Injectable()
 export class MessageService {
-  private listeMessages: Array<Message>;
 
-  findAllFromDate()
+  findAllFromDate() {
+    
+  }
 }
