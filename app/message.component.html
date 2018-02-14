@@ -5,7 +5,9 @@
   <thead>
     <tr>
       <th scope="col">Date</th>
+      <th scope="col">Expediteur</th>
       <th scope="col">Message</th>
+      <th scope="col">Salon no</th>
       <th></th>
       <th></th>
     </tr>
@@ -13,6 +15,8 @@
   <tbody>
     <tr *ngFor="let m of listeMessageParDate()">
       <td>{{ m.date }}</td>
+      <td>{{ m.expediteur.username }} </td>
       <td>{{ m.contenu }}</td>
+      <td>{{ m.salonId }}</td>
   </tbody>
 </table>

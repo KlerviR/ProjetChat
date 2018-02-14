@@ -13,6 +13,7 @@ import { AppConfigService } from './app-config.service';
 import { MessageService } from './message.service';
 import { CanauxService } from './canaux.service';
 import { AuthService } from './auth.service';
+import { MomentService } from './moment.service';
 
 
 const routes: Routes = [
@@ -33,7 +34,8 @@ const routes: Routes = [
         AppConfigService,
         MessageService,
 		CanauxService,
-		AuthService
+		AuthService,
+		MomentService
     ],
 
     declarations: [
