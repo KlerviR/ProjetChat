@@ -9,6 +9,7 @@ import { CanauxComponent } from './canaux.component';
 import { CanalDetailComponent } from './canal-detail.component';
 import { MessageComponent } from './message.component';
 import { AuthComponent } from './auth.component';
+import { MessageParSalonComponent } from './message-par-salon.component';
 
 import { AppConfigService } from './app-config.service';
 import { MessageService } from './message.service';
@@ -16,9 +17,12 @@ import { CanauxService } from './canaux.service';
 import { AuthService } from './auth.service';
 import { MomentService } from './moment.service';
 
+MessageParSalonComponent
+
 
 const routes: Routes = [
 	{ path: 'messages', component: MessageComponent },
+	{ path: 'salon/:id/messages', component: MessageComponent },
 	{ path: 'canal', component: CanauxComponent },
 	{ path: 'auth', component: AuthComponent }
 ]
@@ -44,7 +48,8 @@ const routes: Routes = [
 		CanauxComponent,
 		CanalDetailComponent,
 		MessageComponent,
-		AuthComponent
+		AuthComponent,
+		MessageParSalonComponent
     ],
 
     bootstrap: [ AppComponent ]

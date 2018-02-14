@@ -1,1 +1,21 @@
-<h1>Salon</h1>
+<h1>Bienvenue dans le salon {{ idSalon }}</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Expediteur</th>
+      <th scope="col">Message</th>
+      <th scope="col">Salon no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let m of listeMessageParDate()">
+      <td>{{ m.date | date:"EEEE dd/MM/yyyy hh:mm"  }}</td>
+      <td>{{ m.expediteur.username }} </td>
+      <td>{{ m.contenu }}</td>
+      <td>{{ m.salonId }}</td>
+  </tbody>
+</table>

@@ -16,13 +16,4 @@ export class MessageComponent {
     public listeMessageParDate() { //-----------A supprimer
       return this.service.findAllFromDate("14022018105420");
     }
-
-    //public listeMessageParDate(myDate: date) {
-      //dateFormatee = momentService.format(myDate);
-      //return this.service.findAllFromDate(dateFormatee);
-    //}
-
-    public convertToDate(date: string) {
-
-    }
 }
