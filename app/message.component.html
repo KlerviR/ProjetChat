@@ -14,7 +14,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let m of listeMessageParDate()">
-      <td>{{ m.date }}</td>
+      <td>{{ m.date | date:"EEEE dd/MM/yyyy hh:mm"  }}</td>
       <td>{{ m.expediteur.username }} </td>
       <td>{{ m.contenu }}</td>
       <td>{{ m.salonId }}</td>
