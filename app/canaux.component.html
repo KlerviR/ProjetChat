@@ -2,7 +2,8 @@
 <h1> Liste des canaux </h1>
 
 <table class="table">
-	<tr *ngFor="let c of listeCanaux">
+	<tr *ngFor="let c of afficherListe()">
+		<td>{{ c.id }}</td>
 		<td>{{ c.nom }}</td>
 	</tr>
 </table>

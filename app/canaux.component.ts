@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { Canal } from './canal';
 import { CanauxService } from './canaux.service';
 
 
@@ -12,4 +13,8 @@ export class CanauxComponent {
 
 	constructor(private service: CanauxService) {}
 
+	public afficherListe() {
+		return this.service.findAll();
+	}
+	
 }
