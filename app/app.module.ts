@@ -12,6 +12,7 @@ import { AuthComponent } from './auth.component';
 import { AppConfigService } from './app-config.service';
 import { MessageService } from './message.service';
 import { CanauxService } from './canaux.service';
+import { AuthService } from './auth.service';
 
 
 const routes: Routes = [
@@ -31,7 +32,8 @@ const routes: Routes = [
     providers: [
         AppConfigService,
         MessageService,
-		CanauxService
+		CanauxService,
+		AuthService
     ],
 
     declarations: [

@@ -1,7 +1,10 @@
 
 <h1>Authentification</h1>
 
-<div class="form-group">
-	<label>Identifiant</label>
-	<input type="text" class="form-control" [(ngModel)]="identifiant" />
-</div>
+<div class="input-group mb-3">
+	<div class="input-group-prepend">
+		<span class="input-group-text" id="inputGroup-sizing-default">Identifiant</span>
+	</div>
+	<input type="text" class="form-control" [(ngModel)]="utilisateur.username">
+	<button class="btn btn-success" (click)="valider()">Se Connecter</button>
+ </div>
