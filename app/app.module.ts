@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CanauxComponent } from './canaux.component';
 import { MessageComponent } from './message.component';
+import { AuthComponent } from './auth.component';
 
 import { AppConfigService } from './app-config.service';
 import { MessageService } from './message.service';
@@ -15,7 +16,8 @@ import { CanauxService } from './canaux.service';
 
 const routes: Routes = [
 	{ path: 'messages', component: MessageComponent },
-	{ path: 'canal', component: CanauxComponent }
+	{ path: 'canal', component: CanauxComponent },
+	{ path: 'auth', component: AuthComponent }
 ]
 
 @NgModule({
@@ -35,7 +37,8 @@ const routes: Routes = [
     declarations: [
         AppComponent,
 		CanauxComponent,
-		MessageComponent
+		MessageComponent,
+		AuthComponent
     ],
 
     bootstrap: [ AppComponent ]
