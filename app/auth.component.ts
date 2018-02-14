@@ -10,12 +10,11 @@ import { Utilisateur } from './utilisateur';
 
 export class AuthComponent { 
 	
-	public utilisateur : Utilisateur = new Utilisateur();
+	private utilisateur : Utilisateur = new Utilisateur();
 	
 	constructor(private service: AuthService) {}
 	
 	public valider() {
-		console.log(this.utilisateur.username);
 		this.service.findByUsername(this.utilisateur.username);
 		this.utilisateur = new Utilisateur();
 	}
