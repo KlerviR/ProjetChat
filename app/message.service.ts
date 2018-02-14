@@ -21,4 +21,15 @@ export class MessageService {
         return this.listeMessages;
       }
   }
+
+    findFromSalonAndDate(idSalon: number, date: string) {
+        if (this.listeMessages == null) {
+          this.http
+            .get(this.appConfig.uri + "/canal/" + idSalon + "/message/" + date)
+            .subscribe(resp => this.listeMessages = resp.json());
+          return new Array<Message>();
+        }
+        else {
+          return this.listeMessages;
+        }
 }

@@ -12,9 +12,10 @@ export class MessageParSalonComponent {
     private idSalon : number = 0;
 
     constructor(private route: ActivatedRoute, private service: MessageService ) {
+      this.route.params.subscribe(params => { this.idSalon = params['id']; });
     }
 
-    public listeMessageParDate() { //-----------A supprimer
-      return this.service.findAllFromDate("14022018105420");
+    public listeMessageParDate() {
+      return this.service.findFromSalonAndDate(this.idSalon, "14022018105420");
     }
 }
