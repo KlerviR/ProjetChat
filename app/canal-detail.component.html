@@ -1,1 +1,9 @@
-<p> Canal {{ params }}</p>
+<h1>Informations sur le salon</h1>
+
+<p>
+	Id du salon = {{ canal.id }}<br />
+	Nom du salon = {{ canal.nom }}<br />
+	Proprietaire du salon = {{ canal.proprietaire.username }}<br />
+</p>
+
+<a [routerLink]="['/message']" routerLinkActive="active">Liste des messages</a>

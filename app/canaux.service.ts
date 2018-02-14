@@ -4,6 +4,8 @@ import { Http } from '@angular/http';
 import { AppConfigService } from './app-config.service';
 import { Canal } from './canal';
 
+import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/map';
 
 
 @Injectable()
@@ -23,8 +25,9 @@ export class CanauxService {
 		}
 	}
 	
-	public findById(id: string) {
-	
+	public findById(id: number) : Promise<Canal> {
+		return this.http.get(this.appConfig.uri + "/canal/" + id)
+			.map(resp => resp.json()).toPromise();
 	}
 	
 }

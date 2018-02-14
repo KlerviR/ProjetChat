@@ -24,6 +24,7 @@ const routes: Routes = [
 	{ path: 'messages', component: MessageComponent },
 	{ path: 'salon/:id/messages', component: MessageParSalonComponent },
 	{ path: 'canal', component: CanauxComponent },
+	{ path: 'canal/:id', component: CanalDetailComponent },
 	{ path: 'auth', component: AuthComponent }
 ]
 

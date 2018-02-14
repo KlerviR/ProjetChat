@@ -8,8 +8,9 @@
 	</tr>
 	<tr *ngFor="let c of afficherListe()">
 		<td>
-			<!-- <a [routerLink]="[c.id]" routerLinkActive="active"> -->
+			<a [routerLink]="[c.id]" routerLinkActive="active">
 			{{ c.id }}
+			</a>
 		</td>
 		<td>{{ c.nom }}</td>
 	</tr>
