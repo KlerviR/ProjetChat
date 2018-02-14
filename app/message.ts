@@ -1,4 +1,5 @@
 import { Expediteur } from './expediteur'
+
 export class Message {
   public id: number;
   public contenu: string;

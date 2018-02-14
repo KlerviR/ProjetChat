@@ -9,12 +9,12 @@ import { CanauxService } from './canaux.service';
     templateUrl: 'app/canaux.component.html'
 })
 
-export class CanauxComponent { 
+export class CanauxComponent {
 
 	constructor(private service: CanauxService) {}
 
 	public afficherListe() {
 		return this.service.findAll();
 	}
-	
+
 }
